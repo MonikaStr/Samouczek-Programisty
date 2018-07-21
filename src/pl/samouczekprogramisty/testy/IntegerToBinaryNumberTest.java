@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 public class IntegerToBinaryNumberTest {
 
     IntegerToBinaryNumber userInput;
+    int chosenNumber = 5;
 
     @Before
     public void setUp() {
@@ -17,8 +18,8 @@ public class IntegerToBinaryNumberTest {
 
     @Test
     public void shouldReturnBinaryEquivalent() {
-        StringBuilder resultFromMethod = userInput.changeToBinary(int chosenNumber); // coś tu jest do zmiany
-        assertEquals(Integer.toBinaryString(chosenNumber), resultFromMethod);
+       StringBuilder resultFromMethod = userInput.changeToBinary(chosenNumber);
+       assertEquals(Integer.toBinaryString(chosenNumber), resultFromMethod.toString());
     }
 
 }
